@@ -56,9 +56,36 @@ The CSV files included here are the ones produced by the experiments.
 | `results_exp13.csv`, `results_exp14.csv` | Exp. 13, 14 | Synthetic AR and regime change |
 | `results_exp15.csv` | Exp. 15 | TSFM backbone |
 
-## Figures
+## Example and figures
 
-See `figures/README.md`.
+A counterfactual for one anomalous observation on NAB (case 622). The top row
+shows the factual history and its counterfactual, the bottom row shows the
+conformal interval at time t before and after. In (a) both the center and the
+width of the interval can change, in (b) the center is preserved so that only
+the width changes, and in (c) the change is additionally restricted to a short
+window of recent time steps.
+
+![Counterfactual example on NAB](figures/fig6_counterfactual_nab.png)
+
+Center shift against the margin, for two conformal backbones (raw context and
+SPCI) on MSL and NAB:
+
+![Center shift vs margin](figures/fig2_center_shift.png)
+
+Sensitivity to the center-preserving tolerance epsilon:
+
+![Sensitivity to epsilon](figures/fig3_epsilon.png)
+
+Temporal window scan (sparsity):
+
+![Temporal window](figures/fig4_temporal_window.png)
+
+Synthetic experiments (autoregressive and regime change):
+
+![Synthetic experiments](figures/fig5_synthetic.png)
+
+The scripts that produce these figures are in `figures/`, see
+`figures/README.md`. The PDF versions are in the same folder.
 
 ## Code layout
 
